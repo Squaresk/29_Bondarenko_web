@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>домашка 2</title>
+    <style>
+		@font-face {
+		    font-family: 'Lobster';
+		    font-style: normal;
+		    font-weight: 200;
+		    src: url(https://fonts.gstatic.com/s/lobster/v30/neILzCirqoswsqX9zoamM5Ez.woff2) format('woff2');
+		}  
+        body {
+			font-family: Arial, sans-serif;
+            color: #333;
+			background-color: #000;
+            display: flex;
+			margin: 0px;
+            padding: 0px;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+			font-family: 'Lobster';
+            background-color: #42AAFF;
+            color: #fff;
+			margin: 0px;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+		main {
+			display: flex;
+			flex-direction: column;
+            align-items: center;
+		}
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 1200px;
+            width: 100%;
+            padding: 20px;
+        }
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .main-content {
+            flex: 1 1 60%;
+            padding: 10px;
+            background-color: #ffffff;
+        }
+        #sherlock {
+            flex: 1 1 30%;
+            flex-direction: column;
+            margin-left: 20px;
+			width: 30%;
+        }
+        h2 {
+            color: #42AAFF;
+        }
+        .review {
+            border-top: 1px solid #ccc;
+            padding: 10px 0;
+        }
+		.avatar-square {
+		    width: 30px;
+		    height: 30px;
+		    background-color: #3498db; /* пример цвета */
+		    display: inline-block;
+		    margin-right: 10px;
+		}
+		.author {
+			margin-right: 10px;
+		}
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #444;
+            color: #fff;
+            width: 100%;
+
+        }
+        @media (max-width: 768px) {
+            .flex-container {
+                flex-direction: column;
+            }
+            #sherlock {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>УНИТАЗ, КОТОРЫЙ СВЕТИТСЯ В ТЕМНОТЕ!</h1>
+		<p>Погрузитесь в мир ярких впечатлений даже в самых темных уголках вашего дома!</p>	
+    </header>
+	<main>
+		<img src="https://media1.tenor.com/m/4vgPhxKQw_MAAAAd/polish-toilet.gif" alt="toilet">
+		<div class="container">
+			<div class="flex-container">
+				<div class="main-content">
+					<ol>
+						<li>ВСЕГДА МОЖНО НАЙТИ</li>
+						<li>НЕЛЬЗЯ ПОТЕРЯТЬ, НУ ВОТ НЕЛЬЗЯ</li>
+						<li>АКТЁР БУДУЩЕГО ФИЛЬМА МАЙКЛА БЭЯ</li>
+						<li>ПРИКОЛЬНО КРУТИТСЯ</li>
+						<li>БЕЛЫЙ</li>
+					</ol>
+					<h2>Отзывы пользователей:</h2>
+					<div class="review">
+						<div class="avatar-square"></div>
+						<span class="author">Антон</span>
+						<p>"Не слезаю с него уже сутками! спасибо"</p>
+					</div>
+					<div class="review">
+						<div class="avatar-square"></div>
+						<span class="author">chosen one</span>
+						<p>████████████████████████████████████
+████████████████████████████████████
+█████████████████▓▒▒▒▒▒▓████████████
+█████████████████▓▒▒▒▒▒▓████████████
+█████████████████▓▒▒▒▒▓█████████████
+█████████████▓▒░░░░░░▒▓█████████████
+█████████████▒░░░░░▒▒███████████████
+███████████████▓▒▒▒▓████████████████
+███████████████▒░▒▓▓████████████████
+████████████████████████████████████
+████████████████████████████████████</p>
+					</div>
+					<div class="review">
+						<div class="avatar-square"></div>
+						<span class="author">asfasfsafasfa</span>
+						<p>"найс унитаз"</p>
+					</div>
+				</div>
+				<img id="sherlock" src="https://images.stopgame.ru/uploads/users/2023/646623/r3388x1896/w4KV-t5p0zgjlG1bp7N4hA/00098.0NIs7Ui.jpg" alt="sherlock">
+			</div>
+		</div>
+	</main>
+    <footer>
+        <p>&copy; 2025 Бондаренко ВО</p>
+    </footer>
+</body>
+</html>
+
