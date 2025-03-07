@@ -1,0 +1,108 @@
+@import 'reset.css';
+
+@font-face {
+    font-family: 'Lobster';
+    font-style: normal;
+    font-weight: 200;
+    src: url(https://fonts.gstatic.com/s/lobster/v30/neILzCirqoswsqX9zoamM5Ez.woff2) format('woff2');
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #000;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    font-family: 'Lobster';
+    background-color: #42AAFF;
+    color: #fff;
+    margin: 0;
+	padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+.main-content {
+    flex: 1 1 60%;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+#sherlock {
+    flex: 1 1 30%;
+    flex-direction: column;
+    margin-left: 20px;
+    min-width: 280px;
+}
+
+h2 {
+    color: #42AAFF;
+}
+
+.review {
+    border-top: 1px solid #ccc;
+    padding: 10px 0;
+	max-width: 400px;
+}
+
+.avatar-square {
+    width: 30px;
+    height: 30px;
+    background-color: #3498db; 
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.author {
+    margin-right: 10px;
+	vertical-align: super;
+}
+
+footer {
+    text-align: center;
+    background-color: #444;
+    color: #fff;
+    width: 100%;
+	padding: 20px 0;
+}
+
+@media (max-width: 480px) {
+    .flex-container {
+        flex-direction: column;
+    }
+    #sherlock {
+        margin-left: 0;
+        width: 100%;
+    }
+}
