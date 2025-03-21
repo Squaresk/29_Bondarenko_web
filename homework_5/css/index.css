@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+footer {
+    flex-shrink: 0; 
+    margin-top: auto;
+}
+
+main {
+    display: flex;
+    align-items: flex-start; 
+    justify-content: flex-start; 
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+div {
+	flex-wrap: wrap;
+	padding: 20px;
+    margin: 20px 10px;
+    background-color: #ffffff; 
+    border: 1px solid #ccc;
+    width: 100%;
+    flex: 1 1 40%;
+}
+
+.edit-mode div{ 
+    background-color: #f0f0f0; 
+	border: 1px dashed #ccc; 
+}
+
+input {
+    display: flex;
+	margin: 10px;
+}
+
+#name {
+  margin: 0 auto;
+  margin-top: auto;
+  height: 30px;
+  color: white;
+  background-color: #333;
+  text-align: center;
+  
+}
+.values {
+	width: 40px;
+}
+.description {
+	width: 70%;
+}
